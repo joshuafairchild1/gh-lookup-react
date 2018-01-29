@@ -2,7 +2,7 @@ import { ACTIONS } from '../actions';
 import {SearchType} from "../components/Search";
 
 export default (state = {}, action) => {
-  const { type } = action,
+  const { type } = action || {},
     newState = (update) => ({ ...state, ...update });
   switch (type) {
     case ACTIONS.SET_USER_SEARCH:

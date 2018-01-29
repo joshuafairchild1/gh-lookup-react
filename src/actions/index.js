@@ -19,17 +19,21 @@ class Action {
 }
 
 export const setSearchType = searchType =>
-    new Action(SET_SEARCH_TYPE, { searchType }),
-  setInputValue = (event, type) =>
-    new Action(SET_INPUT_VALUE, { event, inputType: type }),
-  setGithubUser = userResponse => new Action(SET_SEARCH_TYPE, { userResponse }),
-  setGithubRepo = repoResponse => new Action(SET_REPO_SEARCH, { repoResponse });
+  new Action(SET_SEARCH_TYPE, { searchType });
+
+export const setInputValue = (event, type) =>
+  new Action(SET_INPUT_VALUE, { event, inputType: type });
+
+export const setGithubUser = userResponse =>
+  new Action(SET_USER_SEARCH, { userResponse });
+
+export const setGithubRepo = repoResponse =>
+  new Action(SET_REPO_SEARCH, { repoResponse });
 
 export const findGithubUser = username =>
   dispatch =>
     fetch(ENDPOINTS.USER_SEARCH + username)
-      .then(parseResponse)
-      .then(userResponse => dispatch(setGithubUser(userResponse)));
+      .then(res => asyncDispatch(res, setGithubUser)(dispatch));
 
 export const findGithubRepo = (repoName, username) =>
   dispatch =>
@@ -37,7 +41,8 @@ export const findGithubRepo = (repoName, username) =>
       ? ENDPOINTS.REPO_DETAIL + `${username}/${repoName}`
       : ENDPOINTS.REPO_SEARCH + repoName
     )
-      .then(parseResponse)
-      .then(repoResponse => dispatch(setGithubRepo(repoResponse)));
+      .then(res => asyncDispatch(res, setGithubRepo)(dispatch));
 
-
+const asyncDispatch = (response, actionCreator) =>
+  dispatch => parseResponse(response)
+    .then(data => dispatch(actionCreator(data)));

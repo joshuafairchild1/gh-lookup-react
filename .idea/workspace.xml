@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecfe34e3-d13f-4d15-9f1a-ecc18c6025eb" name="Default" comment="implement redux">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/reducers/searches.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils.js" />
+    <list default="true" id="ecfe34e3-d13f-4d15-9f1a-ecc18c6025eb" name="Default" comment="add some unit tests">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/actions/actions.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/reducers/searches.test.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/components/App.css" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="$PROJECT_DIR$/src/components/App.test.js" />
-      <change beforePath="$PROJECT_DIR$/src/RemoteCallTransport.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/RemoteCallTransport.test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChangeSearch.js" afterPath="$PROJECT_DIR$/src/components/ChangeSearch.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Results.js" afterPath="$PROJECT_DIR$/src/components/Results.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.js" afterPath="$PROJECT_DIR$/src/components/Search.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/searches.js" afterPath="$PROJECT_DIR$/src/reducers/searches.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,20 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/gh_lookup_react$Searches_reducer.coverage" NAME="Searches reducer Coverage Results" MODIFIED="1517213746745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/gh_lookup_react$Remote_Call_Transport.coverage" NAME="Remote Call Transport Coverage Results" MODIFIED="1517110431722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Results.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Results.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,16 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,18 +87,38 @@
       <file leaf-file-name="searches.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/searches.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="480">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/actions/actions.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searches.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/searches.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -144,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button</find>
       <find>&lt;button onClick={()</find>
       <find>&lt;button onClick={() =&gt; this.props.setSearchType</find>
       <find>&gt;Search</find>
@@ -174,6 +164,7 @@
       <find>=</find>
       <find>SET_USER_SEARCH</find>
       <find>parseResponse</find>
+      <find>SET_INPUT_VALUE</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -215,9 +206,11 @@
         <option value="$PROJECT_DIR$/src/components/ChangeSearch.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Search.js" />
-        <option value="$PROJECT_DIR$/src/reducers/searches.js" />
         <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/src/reducers/searches.js" />
+        <option value="$PROJECT_DIR$/src/reducers/searches.test.js" />
         <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/actions/actions.test.js" />
       </list>
     </option>
   </component>
@@ -366,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Remote Call Transport">
+  <component name="RunManager" selected="Jest.Searches reducer">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -419,30 +412,6 @@
         <test-name value="Remote Call Transport" />
       </test-names>
     </configuration>
-    <configuration name="Remote Call Transport.does a thing" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/RemoteCallTransport.test.js" />
-      <test-names>
-        <test-name value="Remote Call Transport" />
-        <test-name value="does a thing" />
-      </test-names>
-    </configuration>
-    <configuration name="Remote Call Transport.gets a json user object from github" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/RemoteCallTransport.test.js" />
-      <test-names>
-        <test-name value="Remote Call Transport" />
-        <test-name value="gets a json user object from github" />
-      </test-names>
-    </configuration>
     <configuration name="Remote Call Transport.throws errors when given non-string inputs" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -455,16 +424,39 @@
         <test-name value="throws errors when given non-string inputs" />
       </test-names>
     </configuration>
-    <configuration name="Search Container.uses cached search if one is available" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="Searches reducer" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/reducers/searches.test.js" />
+      <test-names>
+        <test-name value="Searches reducer" />
+      </test-names>
+    </configuration>
+    <configuration name="Searches reducer.changes search type" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/SearchContainer.tests.js" />
+      <test-file value="$PROJECT_DIR$/src/reducers/searches.test.js" />
       <test-names>
-        <test-name value="Search Container" />
-        <test-name value="uses cached search if one is available" />
+        <test-name value="Searches reducer" />
+        <test-name value="changes search type" />
+      </test-names>
+    </configuration>
+    <configuration name="Searches reducer.sets search results" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/reducers/searches.test.js" />
+      <test-names>
+        <test-name value="Searches reducer" />
+        <test-name value="sets search results" />
       </test-names>
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -508,19 +500,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Jest.Search Container.uses cached search if one is available" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.Remote Call Transport.does a thing" />
-      <item index="2" class="java.lang.String" itemvalue="Jest.Remote Call Transport.gets a json user object from github" />
-      <item index="3" class="java.lang.String" itemvalue="Jest.Remote Call Transport" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.Remote Call Transport.throws errors when given non-string inputs" />
+      <item index="0" class="java.lang.String" itemvalue="Jest.Remote Call Transport" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.Remote Call Transport.throws errors when given non-string inputs" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.Searches reducer.changes search type" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.Searches reducer" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.Searches reducer.sets search results" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.Remote Call Transport" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.Remote Call Transport.throws errors when given non-string inputs" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.Remote Call Transport.gets a json user object from github" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.Remote Call Transport.does a thing" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.Search Container.uses cached search if one is available" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.Searches reducer" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.Searches reducer.sets search results" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.Searches reducer.changes search type" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.Remote Call Transport" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.Remote Call Transport.throws errors when given non-string inputs" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +532,7 @@
       <workItem from="1516856506628" duration="518000" />
       <workItem from="1516857057683" duration="77000" />
       <workItem from="1516857194576" duration="7510000" />
-      <workItem from="1517097299753" duration="29275000" />
+      <workItem from="1517097299753" duration="32131000" />
     </task>
     <task id="LOCAL-00001" summary="get a demo react app started (simple search application with github web api) with the initial components and a simple helper class for making requests">
       <created>1516863648115</created>
@@ -563,50 +555,65 @@
       <option name="project" value="LOCAL" />
       <updated>1517110454418</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement redux">
+      <created>1517211838320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517211838321</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 25m 08s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer - 2018.01.29 at 00h 07m 40s.xml">
+      <configuration name="Searches reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 28m 19s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer - 2018.01.29 at 00h 09m 50s.xml">
+      <configuration name="Searches reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 29m 29s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer - 2018.01.29 at 00h 11m 03s.xml">
+      <configuration name="Searches reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 29m 39s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer - 2018.01.29 at 00h 11m 19s.xml">
+      <configuration name="Searches reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 30m 04s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer - 2018.01.29 at 00h 15m 46s.xml">
+      <configuration name="Searches reducer" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 33m 08s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer_sets_search_results - 2018.01.29 at 00h 13m 08s.xml">
+      <configuration name="Searches reducer.sets search results" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.27 at 19h 33m 51s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer_sets_search_results - 2018.01.29 at 00h 13m 46s.xml">
+      <configuration name="Searches reducer.sets search results" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport - 2018.01.28 at 22h 26m 12s.xml">
-      <configuration name="Remote Call Transport" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer_sets_search_results - 2018.01.29 at 00h 14m 17s.xml">
+      <configuration name="Searches reducer.sets search results" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport_gets_a_json_user_object_from_github - 2018.01.27 at 19h 20m 02s.xml">
-      <configuration name="Remote Call Transport.gets a json user object from github" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer_sets_search_results - 2018.01.29 at 00h 14m 51s.xml">
+      <configuration name="Searches reducer.sets search results" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Remote_Call_Transport_throws_errors_when_given_non-string_inputs - 2018.01.27 at 19h 33m 02s.xml">
-      <configuration name="Remote Call Transport.throws errors when given non-string inputs" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Searches_reducer_sets_search_results - 2018.01.29 at 00h 14m 54s.xml">
+      <configuration name="Searches reducer.sets search results" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37380000" />
+    <option name="totallyTimeSpent" value="40236000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16240409" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -614,8 +621,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.4948849" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.5051151" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.4923664" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.50763357" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -627,7 +634,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39897698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.099744245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -645,11 +652,13 @@
     <MESSAGE value="get a demo react app started (simple search application with github web api) with the initial components and a simple helper class for making requests" />
     <MESSAGE value="- `RemoteCallTransport` can now retrieve repositories from GitHub, with or without an accompanying username&#10;- add a component `ChangeSearch` for toggling between user and repository search&#10;- refactor `Search` component to be stateless, as well as support searching for repositories&#10;- `SearchContainer` is now the sole provider of state through the application, add new properties for maintaining the search input values as well as caching previous search results" />
     <MESSAGE value="- add unit tests to RemoteCallTransport" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add unit tests to RemoteCallTransport" />
+    <MESSAGE value="implement redux" />
+    <MESSAGE value="add some unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some unit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -858,6 +867,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -866,10 +899,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/reducers/searches.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="555">
+          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/searches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -898,34 +939,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/searches.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="480">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/actions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
           <folding />
         </state>
       </provider>
