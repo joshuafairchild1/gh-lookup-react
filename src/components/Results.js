@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-class Results extends Component {
-  render() {
-    return (
-      <div>
-        <pre>{this.props.data ? JSON.stringify(this.props.data, null, 2) : ''}</pre>
-      </div>
-    );
-  }
-}
+const Results = ({ currentSearch }) =>
+  <div>
+    <pre>{currentSearch ? JSON.stringify(currentSearch, null, 2) : ''}</pre>
+  </div>;
 
-export default Results;
+const mapStateToProps = ({ currentSearch }) => ({ currentSearch });
+
+export default connect(mapStateToProps)(Results)
