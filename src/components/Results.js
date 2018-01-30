@@ -1,11 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
 
 const Results = ({ currentSearch }) =>
   <div>
     <pre>{currentSearch ? JSON.stringify(currentSearch, null, 2) : ''}</pre>
-  </div>;
+  </div>
 
-const mapStateToProps = ({ currentSearch }) => ({ currentSearch });
-
-export default connect(mapStateToProps)(Results)
+export default Results

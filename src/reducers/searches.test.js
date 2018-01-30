@@ -1,12 +1,14 @@
 import reducer from './searches'
-import {setGithubRepo, setGithubUser, setInputValue, setSearchType} from "../actions";
-import {SearchType} from "../components/Search";
+import {
+  setGithubRepo, setGithubUser, setInputValue, setSearchType
+} from '../actions'
+import SearchType from '../imports/SearchType'
 
 describe('Searches reducer', function() {
 
   it('returns initial state', function () {
     expect(reducer(undefined)).toEqual({})
-  });
+  })
 
   it('changes search type', function() {
     expect(reducer(undefined, setSearchType(SearchType.USER)))
@@ -14,27 +16,31 @@ describe('Searches reducer', function() {
         searchType: SearchType.USER,
         repoInput: '', usernameInput: '',
         currentSearch: null
-      });
-  });
+      })
+  })
 
   it('sets input values', function () {
-    const event1 = { target: { value: 'username'} },
-      event2 = { target: { value: 'repoName' } };
-    expect(reducer(undefined, setInputValue(event1, SearchType.USER)))
-      .toEqual({ usernameInput: 'username' });
+    expect(reducer(undefined, setInputValue('username', SearchType.USER)))
+      .toEqual({ usernameInput: 'username' })
 
-    expect(reducer(undefined, setInputValue(event2, SearchType.REPO)))
+    expect(reducer(undefined, setInputValue('repoName', SearchType.REPO)))
       .toEqual({ repoInput: 'repoName' })
-  });
+  })
 
   it('sets search results', function () {
     const user = { username: 'someUser' },
-      repo = { name: 'some-repo-name' };
+      repo = { name: 'some-repo-name' }
     expect(reducer(undefined, setGithubUser(user)))
-      .toEqual({ currentSearch: user });
+      .toEqual({ currentSearch: user })
 
     expect(reducer(undefined, setGithubRepo(repo)))
-      .toEqual({ currentSearch: repo });
+      .toEqual({ currentSearch: repo })
   })
 
-});
+  it('does not mutate state', function () {
+    const state = reducer(undefined, setGithubUser({ username: 'someUser' }))
+    reducer(state, setGithubUser({ username: 'differentUsername' }))
+    expect(state).toEqual({ currentSearch: { username: 'someUser' } })
+  })
+
+})

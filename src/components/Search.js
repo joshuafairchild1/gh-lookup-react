@@ -1,9 +1,7 @@
-import React  from 'react';
-import { connect } from 'react-redux';
-import {findGithubRepo, findGithubUser, setInputValue, setSearchType} from "../actions";
+import React  from 'react'
+import SearchType from '../imports/SearchType'
 
-export const SearchType = { USER: 'user', REPO: 'repository' };
-const { USER, REPO } = SearchType;
+const { USER, REPO } = SearchType
 
 const Search = ({ usernameInput, repoInput, searchType, ...props }) => {
     switch (searchType) {
@@ -13,14 +11,14 @@ const Search = ({ usernameInput, repoInput, searchType, ...props }) => {
             <h1>Search for a Github user</h1>
             <input
               value={usernameInput}
-              onChange={event => props.inputChanged(event, USER)}/>
+              onChange={({ target }) => props.inputChanged(target, USER)}/>
               {!usernameInput
                 ? null
                 : <button onClick={() => props.searchUsername(usernameInput)}>
                    Search
                   </button>}
           </div>
-        );
+        )
       case REPO:
         return (
           <div>
@@ -29,13 +27,13 @@ const Search = ({ usernameInput, repoInput, searchType, ...props }) => {
               <label>Repository name (required)</label>
               <input
                 value={repoInput}
-                onChange={event => props.inputChanged(event, REPO)}/>
+                onChange={({ target }) => props.inputChanged(target, REPO)}/>
             </div>
             <div>
               <label>Username (optional)</label>
               <input
                 value={usernameInput}
-                onChange={event => props.inputChanged(event, USER)}/>
+                onChange={({ target }) => props.inputChanged(target, USER)}/>
             </div>
             {!!repoInput
               ? <button onClick={() => props.searchRepo(repoInput, usernameInput)}>
@@ -43,7 +41,7 @@ const Search = ({ usernameInput, repoInput, searchType, ...props }) => {
                 </button>
               : <div> </div>}
           </div>
-        );
+        )
       default:
         return (
           <div>
@@ -51,19 +49,8 @@ const Search = ({ usernameInput, repoInput, searchType, ...props }) => {
             <button onClick={() => props.changeSearchType(USER)}>GitHub User</button>
             <button onClick={() => props.changeSearchType(REPO)}>GitHub Repository</button>
           </div>
-        );
+        )
     }
-};
+}
 
-const mapStateToProps = ({ usernameInput, repoInput }) =>
-  ({ usernameInput, repoInput });
-
-const mapDispatchToProps = dispatch => ({
-  searchUsername: username => findGithubUser(username)(dispatch),
-  searchRepo: (repoName, username) =>
-    findGithubRepo(repoName, username)(dispatch),
-  changeSearchType: type => dispatch(setSearchType(type)),
-  inputChanged: (event, type) => dispatch(setInputValue(event, type))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+export default Search

@@ -1,23 +1,15 @@
-import React from 'react';
-import { SearchType } from './Search';
-import { connect } from 'react-redux';
-import {setSearchType} from "../actions";
+import React from 'react'
+import SearchType from '../imports/SearchType'
 
-const { USER, REPO } = SearchType;
+const { USER, REPO } = SearchType
 
 const ChangeSearch = ({ searchType, ...props }) =>
-  searchType === null ? null :
+  !searchType ? null :
     <div>
       <button onClick={() =>
         props.changeSearch(searchType === REPO ? USER : REPO)}>
         Search GitHub {searchType === REPO ? 'Users' : 'Repositories'}
       </button>
-    </div>;
+    </div>
 
-const mapStateToProps = ({ searchType }) => ({ searchType });
-
-const mapDispatchToProps = dispatch => ({
-  changeSearch: type => dispatch(setSearchType(type))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(ChangeSearch)
+export default ChangeSearch
