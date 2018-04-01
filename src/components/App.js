@@ -1,8 +1,8 @@
 import React  from 'react'
 import './App.css'
-import ChangeSearchContainer from '../containers/ChangeSearchContainer';
-import SearchContainer from '../containers/SearchContainer';
-import ResultsContainer from '../containers/ResultsContainer';
+import ChangeSearchContainer from '../containers/ChangeSearchContainer'
+import SearchContainer from '../containers/SearchContainer'
+import ResultsContainer from '../containers/ResultsContainer'
 
 const App = () =>
   <div className='App'>

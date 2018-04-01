@@ -7,15 +7,20 @@ const middlewares = [ thunk ],
 
 describe('Action creators', function() {
 
-  let store
+  let store, mockEvent
+
+  class SyntheticEvent { preventDefault() {} }
 
   beforeEach(function () {
-    global.fetch = () => Promise.resolve({ json: () => Promise.resolve('success') })
+    global.fetch = function() {
+      return Promise.resolve({ json: () => Promise.resolve('success') })
+    }
+    mockEvent = new SyntheticEvent()
     store = mockStore({})
   })
 
   it('gets a response from fetch and dispatches action', function() {
-    return store.dispatch(findGithubUser('someUsername'))
+    return findGithubUser(mockEvent, 'someUsername', store.dispatch)
       .then(() =>
         expect(store.getActions())
           .toEqual([ { type: ACTIONS.SET_USER_SEARCH, userResponse: 'success' } ]))

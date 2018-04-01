@@ -1,7 +1,26 @@
 import { ACTIONS } from '../actions'
-import SearchType from '../imports/SearchType'
+import SearchType from '../components/SearchTypeHelper'
 
-export default (state = {}, action) => {
+export const INITIAL_STATE = {
+ currentSearch: null,
+ usernameInput: '',
+ repoInput: '',
+ searchType: SearchType.NONE,
+}
+Object.freeze(INITIAL_STATE)
+
+/**
+ * @param state {{
+ *  currentSearch: object?,
+ *  searchType: string,
+ *  usernameInput: string,
+ *  repoInput: string,
+ *  searchException: Error?
+ * }}
+ * @param action {*}
+ * @return {*}
+ */
+export default (state = INITIAL_STATE, action) => {
   const { type } = action || {},
     newState = (update) => ({ ...state, ...update })
   switch (type) {
@@ -12,14 +31,16 @@ export default (state = {}, action) => {
     case ACTIONS.SET_SEARCH_TYPE:
       return newState({
         searchType: action.searchType, currentSearch: null,
-        usernameInput: '', repoInput: ''
+        searchException: null, usernameInput: '', repoInput: ''
       })
     case ACTIONS.SET_INPUT_VALUE:
       return newState({
-        [action.inputType === SearchType.REPO
+        [action.searchType === SearchType.REPO
           ? 'repoInput'
           : 'usernameInput']: action.value
       })
+    case ACTIONS.SET_ERROR_MESSAGE:
+      return newState({ searchException: action.exception, currentSearch: null })
     default:
       return state
   }
